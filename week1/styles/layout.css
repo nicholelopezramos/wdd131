@@ -41,3 +41,9 @@ footer {
     text-align: center;
     padding: 1em;
 }
+aside { 
+    border: 1px solid #eee;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 3;
+  }

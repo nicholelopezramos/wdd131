@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nichole L. Ramos - WDD 131</title>
+        <link rel="stylesheet" href="week1/styles/base.css">
+        <meta name="Aunthor" content="Nichole Ramos">
+        <meta
+  name="description"
+  content="Design and develop the following home page using my own content and basic styling." />
 </head>
 <body>
-    <h1>WDD 131 - Nichole L Ramos</h1>
-    <h2>abcs</h2>
-    <h1>csjacakca</h1>
+
+    <header>
+        <h1>WDD 131: Dynamic Fundamentals - Nichole L. Ramos</h1>
+        <nav>
+           
+            <ul>
+                
+                <li><a href="https://www.linkedin.com/in/nichole-ramos-108492204/">LinkedIn </a></li>
+                <li><a href="https://byui.instructure.com/.">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section>
+            <p>Card</p>
+            <p>Image</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="2024"></span> Nichole Ramos, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript for Dynamic Footer -->
+    <script>
+        // Set current year in footer
+        document.getElementById("2024").textContent = new Date().getFullYear();
+
+        // Set last modified date in footer
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
+    </footer>
+
 </body>
 </html>
