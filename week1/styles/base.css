@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,23 +6,23 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     color: #333;
     background-color: #f9f9f9;
     line-height: 1.6;
 }
 
-
+/* Root Variables */
 :root {
-    --primary-color: #fda1d7;
-    --secondary-color: #264653;
-    --accent-color: #e9c46a;
-    --background-color: #f4a261;
+    --primary-color: #cdb4db;
+    --secondary-color: #ffc8dd;
+    --accent-color: #333;
+    --background-color: #bde0fe;
     --text-color: #333;
     --light-text: #ffffff;
 }
 
-/* Header and Navigation Styling */
+/* Header Styling */
 header {
     background-color: var(--primary-color);
     padding: 1rem;
@@ -55,7 +56,7 @@ nav ul li a:hover {
 
 /* Main Content and Grid Layout */
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 2rem auto;
     padding: 1rem;
     display: grid;
@@ -63,7 +64,6 @@ main {
     gap: 1.5rem;
 }
 
-/* Card Styles for Sections */
 .card {
     background-color: var(--background-color);
     padding: 1.5rem;
@@ -121,11 +121,7 @@ footer p {
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
-    nav ul {
-        gap: 2rem;
-    }
-
     main {
-        grid-template-columns: 1fr 1fr; /* Two-column grid layout for cards */
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
     }
 }

@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nichole L. Ramos - WDD 131</title>
-        <link rel="stylesheet" href="week1/styles/base.css">
-        <meta name="Aunthor" content="Nichole Ramos">
-        <meta
-  name="description"
-  content="Design and develop the following home page using my own content and basic styling." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nichole L. Ramos - WDD 131</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="week1/styles/base.css">
+    <script src="week1/scripts/getdates.js" defer></script>
+    <meta name="author" content="Nichole Ramos">
+    <meta name="description" content="Design and develop the following home page using my own content and basic styling.">
 </head>
 <body>
 
     <header>
         <h1>WDD 131: Dynamic Fundamentals - Nichole L. Ramos</h1>
         <nav>
-           
             <ul>
-                
-                <li><a href="https://www.linkedin.com/in/nichole-ramos-108492204/">LinkedIn </a></li>
-                <li><a href="https://byui.instructure.com/.">I-Learn</a></li>
+                <li><a href="https://www.linkedin.com/in/nichole-ramos-108492204/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng">Scripture</a></li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
-        
     </header>
 
     <main>
-        <section>
-            <p>Card</p>
-            <p>Image</p>
+        <div class="card">
+            <h1>About Me</h1>
+            <p>My name is Nichole L. Ramos. I was born in the Philippines and live with my family in Batangas. I am a mother of two girls, Lanaya and Natalia. Lanaya is 4 years old, and Natalia is 2 years old. Right now, I am a full-time mother and a student at night. I love to explore to get to know more about myself.</p>
+            <img src="images/picture.jpg" alt="picture" style="width: 150px; height: auto;">
+    
+            <h1>Philippines</h1>
+            <img src="images/images.png" alt="Philippines flag" style="width: 150px; height: auto;">
+            <p>The Philippines, officially the Republic of the Philippines, is an archipelagic country in Southeast Asia...</p>
+        </div>
+
+        <!-- Web Dev Resources Section -->
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="2024"></span> Nichole Ramos, Philippines</p>
+        <p>&copy; <span id="currentyear"></span> Nichole Ramos, Philippines</p>
         <p id="lastModified"></p>
-    </footer>
-
-    <!-- JavaScript for Dynamic Footer -->
-    <script>
-        // Set current year in footer
-        document.getElementById("2024").textContent = new Date().getFullYear();
-
-        // Set last modified date in footer
-        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
-    </script>
     </footer>
 
 </body>
