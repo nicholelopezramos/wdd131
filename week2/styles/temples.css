@@ -11,7 +11,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.6;
-    color: #333;
+    color: #946f6f;
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
 
 
 header {
-    background-color: #444;
+    background-color: #946f6f;
     color: white;
     padding: 1rem 0.5rem;
     text-align: center;
@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #666;
+    background-color: #946f6f;
 }
 .active {
 	color: yellow;
@@ -98,7 +98,7 @@ main h2 {
 
 
 footer {
-    background-color: #222;
+    background-color: #946f6f;
     color: white;
     text-align: center;
     padding: 1rem 0.5rem;
