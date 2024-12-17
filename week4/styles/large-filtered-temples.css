@@ -2,12 +2,13 @@
     header {
         max-width: 640px;
         margin: 1rem auto;
-        border: 1px solid #e6ccb2;
+        border: 1px solid #b08968;
         padding: 1rem;
-        background-color: #ddb892;
-        color: #b08968; 
+        background-color: #7f5539;
+        color: white; 
     }
 }
 main{
     grid-template-columns: 1fr 1fr;
 }
+

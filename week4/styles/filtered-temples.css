@@ -1,0 +1,222 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    color: #7f5539;
+    background-color: #ede0d4;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: white;
+    color: white;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    background-color: #ede0d4;
+}
+.active {
+	color: yellow;
+}
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Temple Gallery Grid */
+.temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .temple-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .temple-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .temple-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .temple-card h3 {
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .temple-card p {
+    margin: 0.25rem 0;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+
+
+footer {
+    background-color: #7f5539;
+    color: white;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border: 1px solid #ccc;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+}
+@keyframes fade {
+    0% {
+    opacity: 1;
+
+    }
+    
+
+    100%{
+        opacity: 1;
+    }
+
+}
+.lazyload {
+    filter: blur(10px);
+    transition: filter 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.lazyload.loaded {
+    filter: blur(0);
+    opacity: 1;
+}

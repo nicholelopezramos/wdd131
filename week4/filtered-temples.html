@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/large-filtered-temples.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="script/filtered-temples.js" defer></script>    
+</head>
+    
+<body>
+    <header>
+        <h1>Temples</h1>
+        <button class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="old.html">Old</a></li>
+                <li><a href="new.html">New</a></li>
+                <li><a href="large.html">Large</a></li>
+                <li><a href="small.html">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div id="temple-gallery" class="temple-gallery"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Nichole Lopez Ramos, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
