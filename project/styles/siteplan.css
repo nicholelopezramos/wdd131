@@ -4,8 +4,12 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.6;
-    color: white;
-    background-color: #ffb3c6;
+    color: #edf6f9;
+    background-color: #e29578;
     margin: 0;
     padding: 0;
+}
+header {
+    background-color: #83c5be
+    
 }
