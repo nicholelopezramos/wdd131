@@ -1,0 +1,130 @@
+/* From styling section */
+.wf1 div{
+    color: black;
+    padding-top: 1rem;
+    
+}
+.wf1 label {
+display: inline-table;
+align-items: center;
+margin-bottom: 10px;
+font-size: 14px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+header {
+    background-color: #4b2c5e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2%;
+    
+}
+
+form {
+
+    background-color: #d4c7d6;
+    padding: 3%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form div {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: auto;
+}
+
+select, input[type="text"], input[type="date"], textarea, button {
+    width: 280px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+    width: 280px;
+}
+
+button {
+    background-color: #e6e6e6;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    
+}
+
+button:hover {
+    background-color: #ccc;
+    
+}
+
+label input[type="radio"], label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.rating label {
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating .star {
+    font-size: 20px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+.wf1 input[type="radio"],
+.rating input[type="radio"]:checked + .star {
+    color: gold;
+}
+
+.optional {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+footer {
+    background-color: #4b2c5e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+footer span {
+    color: #ff66cc;
+}
