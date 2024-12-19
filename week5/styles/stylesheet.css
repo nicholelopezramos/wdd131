@@ -1,4 +1,4 @@
-/* From styling section */
+
 .wf1 div{
     color: black;
     padding-top: 1rem;
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: #4b2c5e;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
@@ -36,7 +36,7 @@ header {
 
 form {
 
-    background-color: #d4c7d6;
+    background-color: gray;
     padding: 3%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -73,11 +73,13 @@ button {
     cursor: pointer;
     padding: 10px;
     transition: background-color 0.3s;
-    
+    width: 300px;
 }
 
 button:hover {
     background-color: #ccc;
+    
+    
     
 }
 
@@ -116,13 +118,13 @@ label input[type="radio"], label input[type="checkbox"] {
 }
 
 footer {
-    background-color: #4b2c5e;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
     font-size: 12px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 footer span {
